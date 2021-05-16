@@ -22,10 +22,13 @@ body {
 #primary{
     width: 700px;
     float: left;
+    margin-left:5px;
+    margin-right: 8px;
 }
 #secondary{
     width: 220px;
     float: right;
+    margin-left:5px;
 }
 
 html, body {
@@ -74,11 +77,14 @@ html, body {
 #header-image a img {
     border: none;
 }
+.header{ margin-top:5px; }  
 
 #title {
     margin: 0 0 -20px;
     border-bottom: 1px solid #ccc;
     padding-top: 20px;
+    background-color: #173e9b;
+    padding-bottom: 5px;
 }
 
 /* Navigation
@@ -107,9 +113,12 @@ html, body {
 #navigation .menu-item a {
     display: block;
     list-style: none;
+    font-size: 1.15em; 
+    margin-left:5px;
 
 }
-
+/*#navigation .menu-item a:link, a:visited{color: #182A60; font-size: 1.15em; margin-left:5px;}
+#navigation .menu-item a: {color: #b61311;}*/
 #nav-1{
     list-style: none;
     width: 500px;
@@ -117,7 +126,6 @@ html, body {
     margin: 0;
     padding: 0.5em 0;
 }
-
 #nav-2{
     list-style: none;
     width: 200px;
@@ -139,6 +147,9 @@ body .feed {
 -------------------------------------*/
 p {
     margin: 0 0 1em 0;
+    font-size: 1.13em; 
+    line-height: 140%
+
 }
 
 blockquote {
@@ -268,7 +279,7 @@ body .content li {
 }
 
 #blog-title a {
-    color: #404040;
+    color: #fff; margin-left:5px; padding-bottom:5px;
 }
 
 #tagline {
@@ -296,7 +307,7 @@ h1, h2 .entry .title {
 }
 
 h2 {
-    font-size: 1 rem;
+    font-size: 1.25em;
     font-weight: normal;
     color:#388e3e;
     line-height: 120%;
@@ -305,7 +316,7 @@ h2 {
 
 h3 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.0em;
+    font-size: 1.15em;
     font-weight: normal;
     /*color: #8fbf60;*/
     color: #228B22;
@@ -566,13 +577,11 @@ css from Hexo modernist author.
 a {
     text-decoration: none;
 }
-
-a:link, a:visited, a:active {
+a:link, a:visited {
     color: #173e9b;
 }
-
-a:hover {
-    color: #a8001c;
+a:hover, a:active {
+    color: #b61311;
 }
 
 /*  Footer
@@ -580,7 +589,13 @@ a:hover {
 
 #footer{
     text-align: center;
+    background-color: #173e9b;
+    color: #fff
 }
+#footer span{
+            padding-top: 10px;
+            margin-left: 5px;
+        }
 
 /*  Widget Control
 -------------------*/
