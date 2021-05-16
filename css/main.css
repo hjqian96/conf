@@ -113,10 +113,12 @@ html, body {
 #navigation .menu-item a {
     display: block;
     list-style: none;
+    font-size: 1.15em; 
+    margin-left:5px;
 
 }
-#navigation .menu-item a:link {color: #182A60; font-size: 1.15em; margin-left:5px;}
-#navigation .menu-item a:visited{color: #b61311;}
+/*#navigation .menu-item a:link, a:visited{color: #182A60; font-size: 1.15em; margin-left:5px;}
+#navigation .menu-item a: {color: #b61311;}*/
 #nav-1{
     list-style: none;
     width: 500px;
@@ -575,14 +577,10 @@ css from Hexo modernist author.
 a {
     text-decoration: none;
 }
-
-a:link {
+a:link, a:visited {
     color: #173e9b;
 }
-a:visited, a:active {
-    color: #b61311;
-}
-a:hover {
+a:hover, a:active {
     color: #b61311;
 }
 
