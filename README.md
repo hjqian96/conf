@@ -1,2 +1,1 @@
-# conf
-Conference website
+website template
